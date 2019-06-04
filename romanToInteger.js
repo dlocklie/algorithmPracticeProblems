@@ -53,15 +53,15 @@ let romanToInt = function(s) {
   let sum = 0;
   
   for (let i = 0; i < s.length; i++) {
-      let cur = s[i];
-      let curVal = numeral[cur];
-      let next = s[i + 1];
-      let nextVal = numeral[next];
+    let cur = s[i];
+    let curVal = numeral[cur];
+    let next = s[i + 1];
+    let nextVal = numeral[next];
       
       if (curVal >= nextVal || i === s.length -1) {
-          sum += curVal;
+        sum += curVal;
       } else {
-          sum -= curVal;
+        sum -= curVal;
       }
   }
   

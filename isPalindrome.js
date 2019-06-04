@@ -3,8 +3,8 @@ var isPalindrome = function(x) {
   let reversed = numStr.split('').reverse().join('');
   
   if (numStr === reversed) {
-      return true;
+    return true;
   } else {
-      return false;
+    return false;
   }
 };
